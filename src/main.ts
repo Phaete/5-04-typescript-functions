@@ -39,12 +39,15 @@ numbersArray.sort()
 
 const numbers:number[] = [1,2,3,4,5,6,7,8,9,10]
 console.log(numbers.map(num => num*2))
+
+const strings:string[] = ["one", "two", "three", "four", "twentytwo"]
+console.log(strings.filter(str => str.length > 5))
 console.log(numbers.reduce((accumulator, current) => accumulator + current, 0))
 console.log(numbers.some(num => num > 10))
 
 // bonus
 const list:number[] = [15, 6, 3213, 9, 0, 12, 8464 , 1, 1264, 481, 186, 1031, 194];
-const sortedList:number[] = list.sort((a, b) => a-b)
+const sortedList:number[] = list.sort((a, b) => a-b) // a-b is asc, b-a is desc
 console.log(sortedList)
 const squaredList:number[] = sortedList.map(num => num*num)
 console.log(squaredList)
